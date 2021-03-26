@@ -1,0 +1,141 @@
+.video{
+    background-image: url('../img/strefa_turysty_film_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-bottom: 40px;
+    &__logo{
+        display: none;
+        position: absolute;
+        width: 10%;
+        right:0;
+        bottom: 0;
+        @include respond-to(xl){
+            display: block;
+        }
+        &--flower{
+            fill:white;
+            position: absolute;
+            stroke-width: 1;
+            stroke: white;
+        }
+        &--svg1{
+            overflow: hidden;
+            width: 120px;
+            transform: rotate(30deg);
+            right: 150px;
+            bottom: -55px;
+            //width: 100px;
+        }
+        &--svg2{
+            right: 0;
+            bottom: -20px;
+            stroke-width: 0;
+            width: 200px;
+            transform: rotate(-30deg);
+           // width: 100px;
+        }
+        &--svg3{
+            overflow: hidden;
+            display: block;
+            width: 120px;
+            transform: rotate(-80deg);
+            bottom: 205px;
+            right: -40px;
+            //width: 100px;
+        }
+    }
+    &__content{
+        .content{
+            &__img{
+                img{
+                   // margin-top: 25px;
+                    //margin-bottom: 25px;
+                    margin: 25px auto;
+                    max-width: 681px;
+                    max-height: 514px;
+                    width: 100%;
+                    height: auto;                    
+                }
+            }
+            &__text{
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-family: FooterFont, sans-serif;
+                &--title{
+                    color: $video_title;
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+                &--subtitle{
+                    color: $video_title;
+                    font-weight: bold;
+                    font-size: 12px;
+                }
+                &--maincontent{
+                    font-size: 12px;
+                    color: white;
+                }
+                &--more{
+                    position: relative;
+                    font-size: 12px;
+                    color: rgba(255, 255, 255, 0.9);
+                    font-weight: bold;
+                }
+                &--arrow{
+                    width: 10px;
+                    fill: $video_title;
+                    margin-left: 20px;
+                    position: absolute;
+                    top: -1.5px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        width: 100%;
+        height: auto;
+        &--maintheme{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &__header{
+        display: flex;
+        width: 100%;        
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        height: 6px;
+        &--color{
+            width: (100%/9);
+        }
+        &--orange{
+            background: $orange;
+        }
+        &--lightorange{
+            background: $lightorange;
+        }
+        &--yellow{
+            background: $yellow;
+        }
+        &--green{
+            background: $green;
+        }
+        &--mint{
+            background: $mint;
+        }
+        &--ocean{
+            background: $ocean;
+        }
+        &--blue{
+            background: $blue;
+        }
+        &--purple{
+            background: $purple;
+        }
+        &--pink{
+            background: $pink;
+        }
+    }
+}

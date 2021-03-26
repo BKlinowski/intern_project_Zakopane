@@ -1,0 +1,290 @@
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+
+@font-face {
+    font-family: FooterFont;
+    src: url(fonts/fontawesome-webfont.ttf);
+}
+
+.footer{
+        letter-spacing: 1px;
+        font-family: FooterFont, sans-serif;
+        font-size: 12px;
+        &__social{
+            display: flex;
+            width: 100%;
+            @include respond-to(md){
+                //flex-wrap: wrap;
+                //height: 120px;
+            }
+        }
+        &__arrowicon{
+            width: 21px;
+            margin-left: 13px;
+            height: auto;
+            fill: $orange;
+            transform: rotate(-90deg);
+        }
+        &__rowup{
+            display:flex;
+            margin-bottom: 40px;
+            width: 100%;        
+            flex-wrap: nowrap;
+	        justify-content: center;
+            align-items: stretch;
+            overflow: hidden;
+        }
+        &__wrapper{
+            display: flex;
+            letter-spacing: 0;
+            font-size:0;
+           // width: (100%/9);
+          
+        }
+        &__img{
+            &--logo{
+                margin-bottom: 20px;
+            }
+            &--social{
+                width:40px !important;
+                height: auto;
+                
+                transform: rotate(360deg) !important;
+            }
+            &--weather{
+                width: 28px !important;
+                height: auto;
+                margin-right: 5px;
+            }
+            &--contrast{
+                width: 26px;
+                height: auto;
+                margin-right: 20px;
+            }
+            &--bip{
+                width: 46px;
+                height: auto;
+                margin-right: 20px;
+            }
+            &--digital{
+                width: 30px;
+                letter-spacing: 0;
+                height: auto;
+            }
+            &--flag{
+                width: 40px;
+                height: auto;
+                margin-right: 10px;
+            }
+        }
+        & p{
+            color: $footer-link;
+            margin-bottom: 0; 
+        }
+        & a{
+            margin-bottom: 0;
+            color: $footer-link;
+            &:hover{
+                text-decoration: none;
+                color: $footer-link;
+            }
+            img{
+                width:6px;
+                height:auto;
+                transform: rotate(180deg)
+            }
+        }
+        &__a{
+            &--regulamin{
+                margin-left: 25px;
+                @include respond-to(md){
+                    margin-top: 10px;
+                }
+                @include respond-to(sm){
+                    margin-top: 0;
+                }
+            }
+            &--polityka{
+                margin-left: 15px;
+            }
+            &--social{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &__text{
+            margin-bottom: 20px !important;
+        }
+        &__additions{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            & svg span{
+                display: flex;
+            }
+        }
+        &__header{
+            color: $footer-blue;
+            margin-bottom: 20px;
+            text-align: left;
+            &--dodatki{
+                margin-top: 40px;
+                @extend .footer__header;
+                @include respond-to(xs){
+                    margin-top: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        &__col1{
+            .footer__div--center{
+                @include respond-to(xs){
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__col2{
+            .footer__div--center{
+                margin-left: auto;
+                margin-right: auto;
+                @include respond-to(xs){
+                    
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__col3{
+            .footer__div--center{
+                @include respond-to(xl){
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @include respond-to(xs){
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
+                }
+                @include respond-to(sm){
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__col4{
+            .footer__div--center{
+                width: 100%;
+                @include respond-to(xs){
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 20px;
+                }
+                @include respond-to(sm){
+                    margin-top: 20px;
+                }
+                .footer__header{
+                    @include respond-to(xs){
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        &__span{
+            &--degree{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &__div{
+            &--center{
+                width:126px;
+            }
+        }
+        &__rights{
+            display:flex;
+            align-items: center;
+            width: 100%;
+            @include respond-to(lg){
+                flex-wrap: wrap;
+            }
+            @include respond-to(md){
+                letter-spacing: 0;
+            }
+            @include respond-to(sm){
+                margin-bottom: 25px;
+                justify-content: center;
+            }
+        }
+        &__privacy{
+            display:flex;
+            width: 100%;
+            @include respond-to(md){
+                letter-spacing: 0;
+                text-align: center;
+            }
+            @include respond-to(sm){
+                justify-content: center;
+                margin-bottom: 25px;
+            }
+        }
+}
+
+.footer-wrapper{
+    &--orange{
+        .footer__arrowicon{
+            stroke: $orange;
+            fill: $orange;
+        }
+    }
+    &--lightorange{
+        .footer__arrowicon{
+            stroke: $lightorange;
+            fill: $lightorange;
+        }
+    }
+    &--yellow{
+        .footer__arrowicon{
+            stroke: $yellow;
+            fill: $yellow;
+        }
+    }
+    &--green{
+        .footer__arrowicon{
+            stroke: $green;
+            fill: $green;
+        }
+    }
+    &--mint{
+        .footer__arrowicon{
+            stroke: $mint;
+            fill: $mint;
+        }
+    }
+    &--ocean{
+        .footer__arrowicon{
+            stroke: $ocean;
+            fill: $ocean;
+        }
+    }
+    &--blue{
+        .footer__arrowicon{
+            stroke: $blue;
+            fill: $blue;
+        }
+    }
+    &--purple{
+        .footer__arrowicon{
+            stroke: $purple;
+            fill: $purple;
+        }
+    }
+    &--pink{
+        .footer__arrowicon{
+            stroke: $pink;
+            fill: $pink;
+        }
+    }
+}

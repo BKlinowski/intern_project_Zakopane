@@ -1,0 +1,22 @@
+$test: "#ffffff";
+$footer-blue: #236b79;
+$footer-link: #212121;
+$orange: #ed4b00;
+$lightorange:#feb800;
+$yellow:#dcd200;
+$green:#32a52e;
+$mint:#00954b;
+$ocean:#009a90;
+$blue: #0066a4;
+$purple:#393687;
+$pink:#b43b88;
+$card_title:#58b356;
+$video_title:#37a9a1;
+$gallery-svg:#e7e6e6;
+$breakpoints: (
+  'xs': (max-width: 575px),
+  'sm': (max-width: 767px),
+  'md': (max-width: 991px),
+  'lg': (max-width: 1199px),
+  'xl': (min-width: 1200px)
+);

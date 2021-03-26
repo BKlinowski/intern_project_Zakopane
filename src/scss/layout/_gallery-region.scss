@@ -1,0 +1,40 @@
+.gallery-region{
+    &__title{
+        margin-bottom: 25px;
+        &--maintext{
+            font-family: FooterFont, sans-serif;
+            font-size: 48px;
+            font-weight: 100;
+        }
+        &--heart{
+            width: 140px;
+            fill: $gallery-svg;
+        }
+        &--green{
+            color:green;
+        }
+        &--plaintext{
+            font-size: 12px;
+        }
+    }
+    &__div{
+        margin-bottom: 25px;
+        &--subtitle{
+            font-weight: 700;
+            font-size: 16px;
+        }
+        &--left{
+            .gallery-region__img--town{
+                width: 100%;
+            }
+        }
+        &--right{
+            .gallery-region__img--aquapark{
+                width: 100%;
+            }
+            .gallery-region__img--morskie{
+                width: 100%;
+            }
+        }
+    }
+}

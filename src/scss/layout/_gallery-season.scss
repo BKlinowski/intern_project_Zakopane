@@ -1,0 +1,70 @@
+.owl-carousel{
+    .owl-prev{
+        position: absolute;
+        width: 16px;
+        left: -50px;
+        top: 156.5px;
+        @include respond-to('sm'){
+            left: 0;
+        }
+    }
+    .owl-next{
+        position: absolute;
+        width: 16px;
+        right: -50px;
+        top: 156.5px;
+        @include respond-to('sm'){
+            right: 0;
+        }
+    }
+}
+
+.gallery-season{
+    &__nav{
+        &--left{
+            
+        }
+        &--right{
+            
+            transform: rotate(180deg);
+        }
+    }
+    &__div{
+        //box-shadow: inset -1px -45px 25px -10px rgba(0, 0, 0, 0.3);
+        &--content{
+        //position: relative;
+         overflow: hidden;
+         width: 380px;
+         height: 380px;
+        }
+        &--img1{
+            width: 580px !important;
+            position: relative;
+            left: -80px;
+        }
+        &--img2{
+            width: 400px !important;
+        }
+        &--img3{
+            position: relative;
+            left:-120px;
+            width: 550px !important;
+        }
+        &--type{
+            font-family: FooterFont, sans-serif;
+            font-weight: 700;
+            font-size: 12px;
+            color: $green;
+        }
+        &--text{
+            color:white;
+            font-weight: 900;
+        }
+        &--title{
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            bottom: 25px;
+        }
+    }
+}

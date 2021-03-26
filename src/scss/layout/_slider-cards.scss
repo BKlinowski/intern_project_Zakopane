@@ -1,0 +1,63 @@
+.slider-cards{
+    .row{
+        align-items: start;
+    }
+    position: relative;
+    display: block;
+    transform: translateY(-20px);
+    @include respond-to('xs'){
+        transform: translateY(-10px);
+    }
+    z-index: 2;
+    .card{
+      padding: 1.5rem;
+      //margin: 10px;  
+      &:hover{
+          //align-self: flex-start;
+          transform: translateY(-43px);
+         cursor: pointer;
+          .slider-cards__more{
+              display: block;
+          }
+      }
+    }
+    font-family: FooterFont, sans-serif;
+    &__more{
+        display: none;
+        margin-top: 25px;
+        font-size: 12px;
+        font-weight: bold;
+        &--arrow{
+            width: 8px;
+            transform: rotate(180deg);
+            position: relative;
+            top:4px;
+            left:10px;
+        }
+    }
+
+    &__header{
+        
+        font-size: 12px;
+        font-weight: 700;
+        color: $green;
+        line-height: 10%;
+        &--title{
+            margin-left: 25px;
+        }
+    }
+    &__calendar{
+        width: 16px;
+        fill: $green;
+        position: relative;
+        top:6px;
+        
+    }
+    .card-title{
+        font-weight: bold;
+    }
+    .card-body{
+        padding: 0 !important;
+        font-size: 12px;
+    }
+}

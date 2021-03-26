@@ -1,0 +1,110 @@
+.menu{
+    font-family: FooterFont, sans-serif;
+    &__cards{
+        font-size: 12px;
+        font-weight: 700;
+        /* .grid{
+            display: flex;
+            justify-content: center;
+        }*/
+        &--imgcont{
+            width:600px;
+            height: 222px;
+            overflow: hidden;
+        }
+        &--calendar{
+            width: 14px;
+            margin-right: 12px;
+            fill: $card_title;
+        }
+        &--title{
+            color: $card_title;
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+        }
+        &--item{
+            width: 250px;
+            overflow: hidden;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            position: relative;
+            height: 360px;
+        }
+        &--img1{
+            width: 600px !important;
+            height: auto;
+            position: relative;
+            right: 100px;
+        }
+        &--img2{
+            width: 300px !important;
+            height: auto;
+            position: relative;
+            right: 0px;
+        }
+        &--img3{
+            width: 253px !important;
+            height: auto;
+            position: relative;
+        }
+        &--img4{
+            width: 300px !important;
+            height: auto;
+            position: relative;
+            right:36px;
+            bottom: 20px;
+        }
+        &--img5{
+            width: 600px !important;
+            height: auto;
+            position: relative;
+            right: 50px;
+        }
+        &--img6{
+            width: 700px !important;
+            height: auto;
+            position: relative;
+            right: 450px;
+            bottom: 170px;
+        }
+    }
+    &__nav{
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        display: flex;
+        
+        @include respond-to(md){
+            flex-wrap: wrap;
+            border-radius: 0 !important;
+        }
+        &--btn{
+            min-width: 129px !important; 
+            background: white;
+            border: 1px solid rgb(224, 224, 224) !important;
+            &:hover{
+                background: rgb(249, 249, 249);
+                color:green;
+            }
+        } 
+    }
+    &__header{
+        text-align: center;
+        &--svg{
+            width: 160px;
+        }
+        &--undertitle{
+            display: flex;
+            justify-content: center;
+        }
+        &--title{
+            font-size: 48px;
+            font-weight: 100;
+        }
+        &--green{
+            color: green;
+        }
+    }
+}
